@@ -1,0 +1,89 @@
+﻿@page
+@model Projekt.Pages.Ogloszenia.IndexModel
+
+@{
+    ViewData["Title"] = "Ogłoszenia na Liście";
+}
+<head>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        .UlubioneOgloszenie{
+            background-color: red;
+        }
+    </style>
+</head>
+<h1>Ogloszenia</h1>
+@if (User.Identity.IsAuthenticated)
+{
+    <p>
+        <a asp-page="Create">Dodaj nowe ogloszenie</a>
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Ogloszenie[0].Tytul)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ogloszenie[0].Opis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ogloszenie[0].DataDodania)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ogloszenie[0].Uzytkownik)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ogloszenie[0].Kategorie)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Ogloszenie)
+        {
+            <tr class="@(Model.Ulubione.Contains(item.Id) ? "UlubioneOgloszenie" : "")">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tytul)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Opis)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataDodania)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Uzytkownik.Login)
+                </td>
+                <td>
+                    @string.Join(", ", item.Kategorie.Select(x=>x.Nazwa))
+                </td>
+                <td>
+                    @if (item.Uzytkownik.Login == User.Identity.Name || User.IsInRole("Moderator") || User.IsInRole("Administrator"))
+                    {
+                        <a asp-page="./Edit" asp-route-id="@item.Id">Edytuj</a>
+                    } |
+                    <a asp-page="./Details" asp-route-id="@item.Id">Szczegoly</a> |
+                    @if (item.Uzytkownik.Login == User.Identity.Name || User.IsInRole("Moderator") || User.IsInRole("Administrator"))
+                    {
+                        <a asp-page="./Delete" asp-route-id="@item.Id">Usun</a>
+                    }
+                    @if (Model.Ulubione.Contains(item.Id))
+                    {
+                        <a asp-page="./UlubioneUsun" asp-route-id="@item.Id">Usun z ulubionych</a>
+                    }
+                    else
+                    {
+                       <a asp-page="./Ulubione" asp-route-id="@item.Id">Dodaj do ulubionych</a> 
+                    }
+            
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

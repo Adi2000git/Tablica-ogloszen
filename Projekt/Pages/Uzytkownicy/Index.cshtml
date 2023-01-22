@@ -1,0 +1,50 @@
+﻿@page
+@model Projekt.Pages.Uzytkownicy.IndexModel
+
+@{
+    ViewData["Title"] = "Użytkownicy na Liście";
+}
+
+<h1>Użytkownicy</h1>
+
+<head>
+    <style>
+    body {
+        background-color: lightblue;
+    }   
+    </style>
+</head>
+
+<p>
+    <a asp-page="Create">Dodaj nowego uzytkownika</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Uzytkownik[0].Login)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Uzytkownik[0].Rola)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Uzytkownik) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Login)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rola)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edytuj uzytkownika</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Szczegoly uzytkownika</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Usun uzytkownika</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,121 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Projekt
+build_property.RootNamespace = Projekt
+build_property.ProjectDir = D:\semestr 4\Programowanie .NET\Pracownia\Projekt\Projekt\Projekt\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\semestr 4\Programowanie .NET\Pracownia\Projekt\Projekt\Projekt
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Kategorie/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2F0ZWdvcmllXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Kategorie/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2F0ZWdvcmllXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Kategorie/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2F0ZWdvcmllXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Kategorie/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2F0ZWdvcmllXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Kategorie/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcS2F0ZWdvcmllXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Login/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cTG9nSW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Login/LogOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW5cTG9nT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Ogloszenia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2dsb3N6ZW5pYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Ogloszenia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2dsb3N6ZW5pYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Ogloszenia/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2dsb3N6ZW5pYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Ogloszenia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2dsb3N6ZW5pYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Ogloszenia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2dsb3N6ZW5pYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Ogloszenia/Ulubione.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2dsb3N6ZW5pYVxVbHViaW9uZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Ogloszenia/UlubioneUsun.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT2dsb3N6ZW5pYVxVbHViaW9uZVVzdW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Uzytkownicy/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXp5dGtvd25pY3lcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Uzytkownicy/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXp5dGtvd25pY3lcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Uzytkownicy/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXp5dGtvd25pY3lcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Uzytkownicy/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXp5dGtvd25pY3lcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Uzytkownicy/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXp5dGtvd25pY3lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/semestr 4/Programowanie .NET/Pracownia/Projekt/Projekt/Projekt/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-d3ig1haolc

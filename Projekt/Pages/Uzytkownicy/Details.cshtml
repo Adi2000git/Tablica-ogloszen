@@ -1,0 +1,38 @@
+﻿@page
+@model Projekt.Pages.Uzytkownicy.DetailsModel
+
+@{
+    ViewData["Title"] = "Szczegóły Użytkownika";
+}
+
+<h1>Szczegoly</h1>
+
+<head>
+    <style>
+    body {
+        background-color: lightblue;
+    }   
+    </style>
+</head>
+
+<div>
+    <h4>Uzytkownika</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Uzytkownik.Login)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Uzytkownik.Login)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Uzytkownik.Rola)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Uzytkownik.Rola)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Index">Powrot do listy</a>
+</div>

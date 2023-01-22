@@ -1,0 +1,41 @@
+﻿@page
+@model Projekt.Pages.Kategorie.EditModel
+
+@{
+    ViewData["Title"] = "Edytuj Kategorię";
+}
+<head>
+    <style>
+    body {
+        background-color: lightblue;
+    }   
+    </style>
+</head>
+<h1>Edytuj</h1>
+
+<h4>Kategorie</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Kategoria.Id" />
+            <div class="form-group">
+                <label asp-for="Kategoria.Nazwa" class="control-label"></label>
+                <input asp-for="Kategoria.Nazwa" class="form-control" />
+                <span asp-validation-for="Kategoria.Nazwa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Zapisz" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Powrot do listy</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

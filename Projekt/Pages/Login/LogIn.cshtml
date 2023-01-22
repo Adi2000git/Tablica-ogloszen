@@ -1,0 +1,41 @@
+﻿@page
+@model Projekt.Pages.Login.LogInModel
+@{
+    ViewData["Title"] = "Logowanie";
+}
+<head>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<h1>Zaloguj się</h1>
+
+<div>
+    @Model.Message
+</div>
+<div class="container">
+    <form class="form-horizontal" method="post">
+        <div class="form-group">
+            <label asp-for="user.userName" class="control-label"></label>
+            <div class="col-sm-6">
+                <input asp-for="user.userName" class="form-control">
+            
+            </div>
+             <span asp-validation-for="user.userName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="user.password" class="control-label col-sm2"></label>
+            <div class="col-sm-6">
+                <input asp-for="user.password" class="form-control">
+                <span asp-validation-for="user.password" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn btn-primary">Zatwierdź</button>
+            </div>
+        </div>
+    </form>
+</div>

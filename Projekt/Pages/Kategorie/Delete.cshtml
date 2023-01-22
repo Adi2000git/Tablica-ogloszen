@@ -1,0 +1,33 @@
+﻿@page
+@model Projekt.Pages.Kategorie.DeleteModel
+
+@{
+    ViewData["Title"] = "Usuń Kategorię";
+}
+<head>
+    <style>
+    body {
+        background-color: lightblue;
+    }   
+    </style>
+</head>
+<h1>Usun</h1>
+
+<h4>Kategorie</h4>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Kategoria.Nazwa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Kategoria.Nazwa)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Kategoria.Id" />
+        <input type="submit" value="Zapisz" class="btn btn-danger" /> |
+        <a asp-page="./Index">Powrot do listy</a>
+    </form>
+</div>

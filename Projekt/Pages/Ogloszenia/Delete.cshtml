@@ -1,0 +1,51 @@
+﻿@page
+@model Projekt.Pages.Ogloszenia.DeleteModel
+
+@{
+    ViewData["Title"] = "Usuń Ogłoszenie";
+}
+<head>
+    <style>
+    body {
+        background-color: lightblue;
+    }   
+    </style>
+</head>
+<h1>Usun</h1>
+
+<h4>Ogloszenie</h4>
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ogloszenie.Tytul)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ogloszenie.Tytul)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ogloszenie.Opis)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ogloszenie.Opis)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ogloszenie.DataDodania)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ogloszenie.DataDodania)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ogloszenie.Uzytkownik)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ogloszenie.Uzytkownik.Rola)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Ogloszenie.Id" />
+        <input type="submit" value="Zapisz" class="btn btn-danger" /> |
+        <a asp-page="./Index">Powrot do listy</a>
+    </form>
+</div>

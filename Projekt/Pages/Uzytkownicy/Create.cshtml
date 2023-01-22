@@ -1,0 +1,57 @@
+﻿@page
+@model Projekt.Pages.Uzytkownicy.CreateModel
+
+@{
+    ViewData["Title"] = "Dodaj Użytkownika";
+}
+
+<h1>Dodaj</h1>
+
+<head>
+    <style>
+    body {
+        background-color: lightblue;
+    }   
+    </style>
+</head>
+
+<h4>Uzytkownika</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Uzytkownik.Login" class="control-label"></label>
+                <input asp-for="Uzytkownik.Login" class="form-control" />
+                <span asp-validation-for="Uzytkownik.Login" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Uzytkownik.Haslo" class="control-label"></label>
+                <input asp-for="Uzytkownik.Haslo" class="form-control" />
+                <span asp-validation-for="Uzytkownik.Haslo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Uzytkownik.PowtorzHaslo" class="control-label"></label>
+                <input asp-for="Uzytkownik.PowtorzHaslo" class="form-control" />
+                <span asp-validation-for="Uzytkownik.PowtorzHaslo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Uzytkownik.Rola" class="control-label"></label>
+                <select asp-for="Uzytkownik.Rola" class ="form-control" asp-items="Model.Role"></select>
+                <span asp-validation-for="Uzytkownik.Rola" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Zapisz" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Powrot do listy</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
